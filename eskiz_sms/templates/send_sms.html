@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Send SMS</title>
+</head>
+<body>
+
+    <h1>Eskiz.Uz dan SMS yuborish</h1>
+
+    <p>Hozircha faqat o'zbek raqamlarga ishlaydi va ushbu sahifa urls.py ini faqat test uchun ishlating!</p>
+    
+    <form method="post" action="{% url 'eskiz_sms:send_sms' %}">
+        {% csrf_token %}
+        <label for="phone">Telefon:</label>
+        <input type="text" id="phone" name="phone" required><br>
+        <label for="sms">SMS matni (160 belgi max):</label>
+        <textarea id="sms" name="sms" required maxlength="160"></textarea><br>
+        <label for="from">Nik (Nik olmagan bo'lsangiz bo'sh qolsin):</label>
+        <input type="text" id="from" name="from"><br>
+        <label for="from_app">Qaysi Appdan (Ixtiyoriy):</label>
+        <input type="text" id="from_app" name="from_app"><br>
+        <button type="submit">SMS ni yuborish</button>
+    </form>
+</body>
+</html>
