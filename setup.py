@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 
-__version__ = "0.1.5"
+__version__ = "0.1.6"
 
 f = open("README.rst")
 readme = f.read()
@@ -19,11 +19,11 @@ setup(
     author_email="hello@tijorat.org",
     maintainer="Ro'zmat Otajonov",
     maintainer_email="hello@tijorat.org",
-    url="https://docs.tijorat.org/django/",
+    url="https://github.com/Otajonov/django-eskiz-sms",
     packages=find_packages(exclude=["tests*"]),
     
     project_urls={
-        "Batafsil qo'llanma": "https://docs.tijorat.org/django-eskiz-sms",
+        "Yordam": "https://t.me/RozmatOtajonov",
         "GitHub Soure Code": "https://github.com/Otajonov/django-eskiz-sms",
     },
     
@@ -40,6 +40,7 @@ setup(
         "Framework :: Django :: 4.0",
         "Framework :: Django :: 4.1",
         "Framework :: Django :: 4.2",
+        "Framework :: Django :: 5.0",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
@@ -47,6 +48,7 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
     ],
     zip_safe=False,
     python_requires=">=3.7",
